@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif; /* Use a simple font */
+    margin: 0;
+    background-color: #ffffff; /* Default white background */
+    color: #000000; /* Default black text */
+    width: 400px;
+    height: 50px;  /* Increased height for better layout */
+    overflow-y: auto;
+    border-radius: 40px; /* Curvy edges */
+}
+
+.popup-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+/* Dynamic Background Color Based on Platform */
+.popup-container[data-platform="YouTube"] {
+    background-color: #e44040; /* YouTube Red */
+    color: white; /* White text for contrast */
+}
+
+.popup-container[data-platform="Netflix"] {
+    background-color: #141414; /* Netflix Black */
+    color: white; /* White text for contrast */
+}
+
+.popup-container[data-platform="Prime Video"] {
+    background-color: #232F3E; /* Amazon Prime Blue */
+    color: white; /* White text for contrast */
+}
+
+.popup-container[data-platform="Disney+ Hotstar"] {
+    background-color: #1E90FF; /* Disney Blue */
+    color: white; /* White text for contrast */
+}
+
+.popup-container[data-platform="Instagram"] {
+    background-color: #E1306C; /* Instagram Pink */
+    color: white; /* White text for contrast */
+}
+
+h1 {
+    font-size: 1.5em; /* Increased font size */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold; /* Bold title */
+    color: inherit; /* Inherit color from the container */
+}
+
+#commentInput {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#saveTimestamp {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+#bookmarksContainer {
+    width: 80%;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for bookmarks */
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.comment-link:hover {
+    text-decoration: underline;
+}
+
+.copy-button, .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px; /* Closer together */
+    padding: 4px 8px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    color: white;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for bookmarks */
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Add space between each timestamp */
+}
+
+.copy-button {
+    background-color: #007BFF; /* Blue color */
+}
+
+.copy-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.delete-button {
+    background-color: #e60000; /* Red color */
+}
+
+.delete-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}

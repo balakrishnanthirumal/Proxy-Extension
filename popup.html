@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1 id="dynamicTitle">Bookmarks</h1> <!-- Title Element -->
+        <input type="text" id="commentInput" placeholder="Add a comment to your bookmark" />
+        <button id="saveTimestamp">Save Bookmark</button>
+
+        <!-- Search input for filtering bookmarks -->
+        <input type="text" id="filterInput" placeholder="Filter bookmarks" />
+        <button id="filterButton">Filter</button>
+
+        <div id="bookmarksContainer"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
